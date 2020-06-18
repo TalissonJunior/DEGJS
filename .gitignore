@@ -1,0 +1,8 @@
+dist/
+temp/
+typings/
+node_modules/
+.DS*
+._.*
+.idea/
+yarn.lock

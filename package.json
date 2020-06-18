@@ -1,0 +1,29 @@
+{
+  "name": "degjs",
+  "version": "1.0.0",
+  "description": "DATA EXPORT GENERATOR JS",
+  "main": "webpack.config.js",
+  "scripts": {
+    "watch": "webpack --config buildtools/webpack.dev.js --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config buildtools/webpack.prod.js",
+    "serve": "node server",
+    "test": "jest"
+  },
+  "author": "Talisson Junior",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.3.0",
+    "ts-loader": "^7.0.5",
+    "tslint": "^6.1.2",
+    "tslint-webpack-plugin": "^2.1.0",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}

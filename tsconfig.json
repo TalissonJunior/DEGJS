@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "outDir": "./node_modules/.cache/deg",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    },
+    "exclude": [
+        "dist"
+    ]
+}
