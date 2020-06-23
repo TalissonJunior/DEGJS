@@ -1,6 +1,6 @@
 ## DEGJS
 
-Backend service that works with DEGJS
+An library to export all the data from your database
 
 ### INSTALL
 
