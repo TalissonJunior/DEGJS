@@ -9,10 +9,30 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
+    document.addEventListener("DOMContentLoaded", async function(){
         // Handler when the DOM is fully loaded
     
-        var deg = DEG.init();
+        var deg = DEG.init({
+            serverDomain: "https://localhost:5001"
+        });
+
+        // Extract collection from data object;
+        const { collection }  = deg.data();
+
+        // List all collections availables
+       /* const collections = await deg.collections();
+        console.log(collections);*/
+        
+        deg.process(
+            collection("projeto", ["Nome", "DataInicio"]),
+            collection("entrevista", ["Data"])
+        );
+
+        deg.export();
+
+        /*deg.view();
+
+        deg.export("xls").AsCount("Projeto");*/
     });
 </script>
 </body>
